@@ -106,7 +106,7 @@ export function ProductsPage() {
               </Button>
               <Button 
                 variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-blue-600"
+                className="border-white text-black hover:bg-white hover:text-blue-600"
                 onClick={() => openEnquiry('General Product Inquiry')}
               >
                 <Mail className="mr-2 h-5 w-5" />
