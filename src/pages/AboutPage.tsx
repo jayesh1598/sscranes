@@ -26,14 +26,14 @@ const values = [
   }
 ];
 
-const timeline = [
-  { year: "2009", event: "Company founded in Navi Mumbai" },
-  { year: "2012", event: "Expanded to crane sales and rentals" },
-  { year: "2015", event: "Achieved ISO safety certification" },
-  { year: "2018", event: "Reached 500+ completed projects" },
-  { year: "2021", event: "Launched 24/7 emergency services" },
-  { year: "2024", event: "Serving across Maharashtra" }
-];
+// const timeline = [
+//   { year: "2009", event: "Company founded in Navi Mumbai" },
+//   { year: "2012", event: "Expanded to crane sales and rentals" },
+//   { year: "2015", event: "Achieved ISO safety certification" },
+//   { year: "2018", event: "Reached 500+ completed projects" },
+//   { year: "2021", event: "Launched 24/7 emergency services" },
+//   { year: "2024", event: "Serving across Maharashtra" }
+// ];
 
 export function AboutPage() {
   return (
@@ -120,7 +120,7 @@ export function AboutPage() {
       </section>
 
       {/* Timeline Section */}
-      <section className="py-20 bg-white">
+    {/*   <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -149,7 +149,7 @@ export function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section>*/}
 
       {/* Team Section */}
       <section className="py-20 bg-gray-50">
