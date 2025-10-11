@@ -46,14 +46,6 @@ export function Footer({ onNavigate }: FooterProps) {
               </li>
               <li>
                 <button 
-                  onClick={() => onNavigate('services')} 
-                  className="text-gray-300 hover:text-white transition-colors text-left"
-                >
-                  Our Services
-                </button>
-              </li>
-              <li>
-                <button 
                   onClick={() => onNavigate('products')} 
                   className="text-gray-300 hover:text-white transition-colors text-left"
                 >
