@@ -1,6 +1,6 @@
 import { HeroSlider } from '../components/HeroSlider';
 import { About } from '../components/About';
-import { Services } from '../components/Services';
+//import { Services } from '../components/Services';
 import { ScrollingBanner } from '../components/ScrollingBanner';
 import { Equipment } from '../components/Equipment';
 
@@ -13,8 +13,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
     <div>
       <HeroSlider />
       <About />
-      <Services />
-      <ScrollingBanner />
+    <ScrollingBanner />
       <Equipment />
       
       {/* Quick Contact Section */}
