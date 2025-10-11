@@ -81,7 +81,7 @@ export function ScrollingBanner() {
         <p className="text-gray-300 mb-6">
           Need crane services for your next project?
         </p>
-        <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition-colors duration-300 transform hover:scale-105">
+        <button className="bg-blue-600 hover:bg-blue-700 text-black px-8 py-3 rounded-lg transition-colors duration-300 transform hover:scale-105">
           Get Free Quote Today
         </button>
       </div>
