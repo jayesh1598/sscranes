@@ -34,7 +34,7 @@ export function HeroBanner({ onNavigate }: HeroBannerProps = {}) {
               <div className="text-center">
                 <Shield className="h-10 w-10 text-yellow-400 mx-auto mb-3" />
                 <p className="font-medium">Safety First</p>
-                <p className="text-sm text-blue-100">Certified Operations</p>
+                <p className="text-sm text-blue-100">Happy Customer</p>
               </div>
               <div className="text-center">
                 <Clock className="h-10 w-10 text-yellow-400 mx-auto mb-3" />
