@@ -129,7 +129,7 @@ export function ProductsPage() {
                 <TabsTrigger value="mobile">Mobile</TabsTrigger>
                 <TabsTrigger value="tower">Tower</TabsTrigger>
                 <TabsTrigger value="overhead">Overhead</TabsTrigger>
-                <TabsTrigger value="parts">Parts</TabsTrigger>
+                
               </TabsList>
             </div>
 
