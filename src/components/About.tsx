@@ -3,8 +3,8 @@ import { CheckCircle, Calendar, Users, Trophy } from 'lucide-react';
 
 const stats = [
   { icon: Calendar, label: "Years of Experience", value: "15+" },
-  { icon: Users, label: "Certified Operators", value: "25+" },
-  { icon: Trophy, label: "Projects Completed", value: "500+" },
+  { icon: Users, label: "Customer Satisfied", value: "500+" },
+  { icon: Trophy, label: "Product Delivered", value: "500+" },
   { icon: CheckCircle, label: "Safety Record", value: "100%" }
 ];
 
