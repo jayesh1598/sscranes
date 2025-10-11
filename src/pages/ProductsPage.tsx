@@ -263,33 +263,7 @@ export function ProductsPage() {
               </div>
             </TabsContent>
 
-            <TabsContent value="parts" className="space-y-8">
-              <div className="text-center mb-8">
-                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Parts & Accessories</h3>
-                <p className="text-gray-600">Genuine crane parts, accessories, and safety equipment</p>
-              </div>
-              
-              <div className="grid md:grid-cols-2 gap-8">
-                {accessories.map((item, index) => (
-                  <Card key={index} className="hover:shadow-lg transition-shadow">
-                    <CardHeader>
-                      <CardTitle className="text-lg">{item.name}</CardTitle>
-                      <p className="text-gray-600">{item.description}</p>
-                    </CardHeader>
-                    <CardContent>
-                      <Button 
-                        variant="outline" 
-                        className="w-full"
-                        onClick={() => openEnquiry(item.name)}
-                      >
-                        Contact Us
-                      </Button>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </TabsContent>
-          </Tabs>
+            </Tabs>
         </div>
       </section>
 
