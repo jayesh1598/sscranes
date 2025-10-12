@@ -12,9 +12,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
 
   const navigation = [
     { name: 'Home', id: 'home' },
-    { name: 'About', id: 'about' },
-    { name: 'Products', id: 'products' },
-    { name: 'Contact', id: 'contact' }
+    { name: 'Products', id: 'products' }
   ];
 
   return (
@@ -46,7 +44,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
         <div className="flex justify-between items-center py-4">
           <div className="flex-shrink-0">
             <h1 className="text-3xl font-bold text-gray-900">SS Cranes & Lifters</h1>
-            <p className="text-sm text-gray-600 mt-1">Sales & Service Solutions</p>
+            <p className="text-sm text-gray-600 mt-1">Pan-India Furunkang Manlift Distributor</p>
           </div>
           
           {/* Desktop Navigation */}
@@ -64,8 +62,8 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
                 {item.name}
               </button>
             ))}
-            <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
-              Get Quote
+            <Button size="sm" className="bg-blue-600 hover:bg-blue-700" onClick={() => onNavigate('products')}>
+              View Product Range
             </Button>
           </nav>
 
@@ -101,8 +99,8 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
                 </button>
               ))}
               <div className="px-4 pt-2">
-                <Button size="sm" className="w-full bg-blue-600 hover:bg-blue-700">
-                  Get Quote
+                <Button size="sm" className="w-full bg-blue-600 hover:bg-blue-700" onClick={() => onNavigate('products')}>
+                  View Product Range
                 </Button>
               </div>
             </nav>
