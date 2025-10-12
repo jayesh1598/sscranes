@@ -152,8 +152,7 @@ export function ProductsPage() {
               </h2>
               <TabsList className="grid w-full max-w-md mx-auto grid-cols-3">
                 <TabsTrigger value="truck-mounted">Truck Mounted Lifts</TabsTrigger>
-                <TabsTrigger value="chassis-packages">Chassis Kits</TabsTrigger>
-                <TabsTrigger value="spares">Accessories</TabsTrigger>
+            
               </TabsList>
             </div>
 
