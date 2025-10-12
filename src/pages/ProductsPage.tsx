@@ -295,10 +295,10 @@ export function ProductsPage() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: Shield, title: "Warranty", description: "Comprehensive warranty on all new equipment" },
-              { icon: Settings, title: "Installation", description: "Professional installation and commissioning" },
-              { icon: Truck, title: "Delivery", description: "Safe transportation and delivery across Maharashtra" },
-              { icon: Star, title: "Support", description: "24/7 technical support and maintenance services" }
+              { icon: Shield, title: "Factory Warranty", description: "Official Furunkang coverage with extended options" },
+              { icon: Settings, title: "Chassis Engineering", description: "Mounting kits and PTO configuration for Indian fleets" },
+              { icon: Truck, title: "Pan-India Delivery", description: "Doorstep delivery with dispatch updates across India" },
+              { icon: Star, title: "Operator Training", description: "Commissioning walkthrough and safety orientation" }
             ].map((feature, index) => (
               <Card key={index} className="text-center hover:shadow-lg transition-shadow">
                 <CardHeader>
