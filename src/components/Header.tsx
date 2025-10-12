@@ -65,7 +65,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
               </button>
             ))}
             <Button size="sm" className="bg-blue-600 hover:bg-blue-700" onClick={() => onNavigate('products')}>
-              View Product Range
+              Enquiry Now
             </Button>
           </nav>
 
