@@ -63,20 +63,30 @@ const truckMountedLifts = [
   }
 ];
 
-const towerCranes = [
+const chassisPackages = [
   {
-    name: "Self-Erecting Tower Crane",
-    capacity: "8 Tons",
-    boom: "50m",
-    status: "In Stock",
-    features: ["Self-Erecting", "Remote Control", "Weather Protection", "High Precision"]
+    name: "Ashok Leyland Integration Kit",
+    capacity: "FT-160 to FT-280",
+    boom: "Factory-mounted",
+    status: "Ready Stock",
+    features: [
+      "Pre-engineered sub-frame",
+      "Electrical harness integration",
+      "Load distribution certification",
+      "On-site commissioning support"
+    ]
   },
   {
-    name: "Luffing Jib Tower Crane",
-    capacity: "12 Tons",
-    boom: "60m",
+    name: "Tata & Bharat Benz Mounting Kit",
+    capacity: "FT-200 to FT-320",
+    boom: "Factory-mounted",
     status: "Available",
-    features: ["Luffing Jib", "High Capacity", "Weather Resistant", "Advanced Safety"]
+    features: [
+      "Hydraulic PTO configuration",
+      "Stability validation reports",
+      "Operator safety interlocks",
+      "Chassis reinforcement guidelines"
+    ]
   }
 ];
 
