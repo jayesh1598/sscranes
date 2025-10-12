@@ -3,7 +3,6 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { HomePage } from './pages/HomePage';
 import { AboutPage } from './pages/AboutPage';
-import { ServicesPage } from './pages/ServicesPage';
 import { ProductsPage } from './pages/ProductsPage';
 import { ContactPage } from './pages/ContactPage';
 
@@ -18,16 +17,13 @@ export default function App() {
 
   const renderPage = () => {
     switch (currentPage) {
-      case 'home':
-        return <HomePage onNavigate={handleNavigate} />;
-      case 'about':
-        return <AboutPage />;
-      case 'services':
-        return <ServicesPage />;
       case 'products':
         return <ProductsPage />;
+      case 'about':
+        return <AboutPage />;
       case 'contact':
         return <ContactPage />;
+      case 'home':
       default:
         return <HomePage onNavigate={handleNavigate} />;
     }

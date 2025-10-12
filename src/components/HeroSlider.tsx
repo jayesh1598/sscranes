@@ -10,27 +10,30 @@ import crane3 from 'figma:asset/d98526e253b6f0ce24feda67d0e5da9864f497e4.png';
 const slides = [
   {
     image: crane1,
-    title: "Professional Crane Sales & Services",
-    subtitle: "SS Cranes & Lifters",
-    description: "Your trusted partner for crane sales, rentals, and professional lifting services across Navi Mumbai and Maharashtra.",
-    cta: "Get Free Quote",
-    highlight: "15+ Years Experience"
+    title: "Furunkang Truck Mounted Manlifts",
+    subtitle: "Authorized Distributor",
+    description: "Pan-India supply of Furunkang aerial work platforms with working heights from 16m to 32m and rapid delivery to every project site.",
+    cta: "Speak to Sales",
+    secondaryCta: "View Product Range",
+    highlight: "Pan-India Sole Distributor"
   },
   {
     image: crane2,
-    title: "Heavy Duty Lifting Solutions",
-    subtitle: "Industrial Grade Equipment",
-    description: "State-of-the-art cranes for construction, industrial, and commercial projects with certified operators and 24/7 support.",
-    cta: "View Products",
-    highlight: "24/7 Emergency Service"
+    title: "Ready-to-Mount AWP Kits",
+    subtitle: "Built for Indian Fleet",
+    description: "Factory-tested kits engineered to mount on Ashok Leyland, Tata, Eicher, Bharat Benz and other leading Indian chassis.",
+    cta: "Book a Demo",
+    secondaryCta: "See Chassis Options",
+    highlight: "Multi-Chassis Compatibility"
   },
   {
     image: crane3,
-    title: "Precision & Safety First",
-    subtitle: "Certified Operations",
-    description: "Safe, reliable, and efficient crane operations with fully certified equipment and experienced operators.",
-    cta: "Contact Us",
-    highlight: "100% Safety Compliant"
+    title: "Certified Work Platforms",
+    subtitle: "Furunkang Technology",
+    description: "European-standard safety with smart controls, insulation options and platform capacities designed for utilities and infrastructure teams.",
+    cta: "Request Specifications",
+    secondaryCta: "Download Brochure",
+    highlight: "EN & IS Compliance"
   }
 ];
 
@@ -110,16 +113,21 @@ export function HeroSlider() {
                     </div>
                     
                     <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                      <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold text-lg px-8 py-4">
+                      <Button
+                        size="lg"
+                        className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold text-lg px-8 py-4"
+                        onClick={() => window.open('tel:+917021844804')}
+                      >
                         <Phone className="mr-2 h-5 w-5" />
                         {slide.cta}
                       </Button>
-                      <Button 
-                        variant="outline" 
-                        size="lg" 
+                      <Button
+                        variant="outline"
+                        size="lg"
                         className="border-white text-white hover:bg-white hover:text-gray-900 text-lg px-8 py-4"
+                        onClick={() => window.open('mailto:sales@sscraneslifters.com')}
                       >
-                        Learn More
+                        {slide.secondaryCta}
                         <ArrowRight className="ml-2 h-5 w-5" />
                       </Button>
                     </div>
@@ -169,15 +177,13 @@ export function HeroSlider() {
 
       {/* Company Info Overlay */}
       <div className="absolute bottom-8 right-8 z-20 bg-black/30 backdrop-blur-sm text-white p-6 rounded-lg border border-white/20 max-w-sm hidden lg:block">
-        <h3 className="font-semibold text-lg mb-2">SS Cranes & Lifters</h3>
-        <p className="text-sm text-gray-300 mb-3">
-          271, Rabale MIDC Rd, Gautam Nagar<br />
-          Navi Mumbai, Maharashtra 400701
-        </p>
-        <div className="space-y-1 text-sm">
-          <p>📞 +91 70218 44804</p>
-          <p>✉️ info@sscraneslifters.com</p>
-        </div>
+        <h3 className="font-semibold text-lg mb-3">Furunkang AWP Advantage</h3>
+        <ul className="space-y-2 text-sm text-gray-200">
+          <li>• Working heights: 16m, 20m, 24m, 28m, 32m</li>
+          <li>• Platform capacity up to 320 kg with 2-person basket</li>
+          <li>• Rapid mounting on Ashok Leyland, Tata, Eicher, Bharat Benz chassis</li>
+          <li>• All units delivered with safety certifications and training</li>
+        </ul>
       </div>
 
       {/* Pause/Play indicator */}

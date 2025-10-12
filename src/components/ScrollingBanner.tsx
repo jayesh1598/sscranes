@@ -29,10 +29,10 @@ export function ScrollingBanner() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
         <div className="text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-            Our Equipment in Action
+            Furunkang Manlifts On Site
           </h2>
           <p className="text-xl text-gray-300">
-            Professional crane services across various project sites
+            High-reach truck mounted platforms supporting infrastructure and utility projects nationwide
           </p>
         </div>
       </div>
@@ -79,10 +79,13 @@ export function ScrollingBanner() {
       {/* Call to action */}
       <div className="text-center mt-12">
         <p className="text-gray-300 mb-6">
-          Need crane services for your next project?
+          Download detailed specifications and chassis preparation guidelines for every model.
         </p>
-        <button className="bg-blue-600 hover:bg-blue-700 text-black px-8 py-3 rounded-lg transition-colors duration-300 transform hover:scale-105">
-          Get Free Quote Today
+        <button
+          className="bg-blue-600 hover:bg-blue-700 text-black px-8 py-3 rounded-lg transition-colors duration-300 transform hover:scale-105"
+          onClick={() => window.open('mailto:sales@sscraneslifters.com')}
+        >
+          Request Product Dossier
         </button>
       </div>
     </section>

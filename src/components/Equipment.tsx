@@ -9,21 +9,27 @@ import crane3 from 'figma:asset/4d33ef90bd2dca26d45c7c921a0acb89609be36f.png';
 const equipment = [
   {
     image: crane1,
-    title: "Mobile Truck Crane - 25T",
-    specifications: ["25 Ton Capacity", "30m Boom Length", "Hydraulic Extension", "All-Terrain"],
-    description: "Versatile truck-mounted crane ideal for construction and industrial applications"
+    title: "Furunkang FT-160 Truck Mounted Lift",
+    workingHeight: "16 metres",
+    platformCapacity: "230 kg insulated basket",
+    compatibleChassis: "Ashok Leyland Ecomet, Tata LPK",
+    description: "Compact aerial platform ideal for urban electrical maintenance and street lighting projects."
   },
   {
     image: crane2,
-    title: "Articulated Boom Lift",
-    specifications: ["20m Working Height", "Hydraulic Platform", "360° Rotation", "Outrigger Support"],
-    description: "Perfect for maintenance work, tree trimming, and elevated access requirements"
+    title: "Furunkang FT-200 Aerial Work Platform",
+    workingHeight: "20 metres",
+    platformCapacity: "260 kg fiberglass basket",
+    compatibleChassis: "Tata SIGNA, Bharat Benz 1217",
+    description: "Mid-height solution offering 360° rotation with proportional controls for precision positioning."
   },
   {
     image: crane3,
-    title: "Heavy Duty Crane - 40T",
-    specifications: ["40 Ton Capacity", "45m Boom Length", "Advanced Control", "City Operation"],
-    description: "High-capacity crane for demanding lifting operations in urban environments"
+    title: "Furunkang FT-320 High Reach Manlift",
+    workingHeight: "32 metres",
+    platformCapacity: "320 kg dual-entry basket",
+    compatibleChassis: "Eicher Pro 3015, Ashok Leyland 2820",
+    description: "Flagship high-reach model with advanced stability controls for transmission and metro projects."
   }
 ];
 
@@ -33,10 +39,10 @@ export function Equipment() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Our Equipment Fleet
+            Furunkang Truck Mounted Lift Range
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Modern, well-maintained cranes and lifting equipment ready for your project needs
+            Ready-to-dispatch aerial work platforms supplied exclusively by SS Cranes & Lifters for projects across India.
           </p>
         </div>
         
@@ -58,11 +64,15 @@ export function Equipment() {
                   {item.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {item.specifications.map((spec, specIndex) => (
-                    <Badge key={specIndex} variant="secondary" className="text-xs">
-                      {spec}
-                    </Badge>
-                  ))}
+                  <Badge variant="secondary" className="text-xs">
+                    Working Height: {item.workingHeight}
+                  </Badge>
+                  <Badge variant="secondary" className="text-xs">
+                    Platform Capacity: {item.platformCapacity}
+                  </Badge>
+                  <Badge variant="secondary" className="text-xs">
+                    Compatible Chassis: {item.compatibleChassis}
+                  </Badge>
                 </div>
               </CardContent>
             </Card>
@@ -70,9 +80,9 @@ export function Equipment() {
         </div>
         
         <div className="text-center mt-12">
-          <p className="text-gray-600 mb-4">Need specific equipment specifications or have custom requirements?</p>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors">
-            Contact Our Equipment Specialists
+          <p className="text-gray-600 mb-4">Request the complete Furunkang catalogue with technical drawings and mounting guidelines.</p>
+          <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors" onClick={() => window.open('mailto:sales@sscraneslifters.com')}>
+            Email Me the Catalogue
           </button>
         </div>
       </div>

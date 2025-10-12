@@ -15,61 +15,86 @@ import crane1 from 'figma:asset/0404d9e47455bdc0b536dab9952a209a2600c105.png';
 import crane2 from 'figma:asset/88e5719b4227d99b970bd5d363499deadf29ff45.png';
 import crane3 from 'figma:asset/4d33ef90bd2dca26d45c7c921a0acb89609be36f.png';
 
-const mobilecranes = [
+const truckMountedLifts = [
   {
     id: 1,
-    name: "Hydraulic Mobile Crane - 25T",
+    name: "Furunkang FT-160 Truck Mounted Lift",
     image: crane1,
-    capacity: "25 Tons",
-    boom: "30m",
+    workingHeight: "16 m",
+    platformCapacity: "230 kg",
     status: "In Stock",
-    features: ["Hydraulic Extension", "All-Terrain", "Quick Setup", "Safety Systems"],
-    description: "Versatile 25-ton mobile crane perfect for construction and industrial applications."
+    features: [
+      "Insulated fibreglass basket",
+      "Proportional joystick controls",
+      "Auto-level outriggers",
+      "Compact footprint for urban jobs"
+    ],
+    description: "Optimised for city utilities and street lighting maintenance with seamless mounting on Ashok Leyland and Tata chassis."
   },
   {
     id: 2,
-    name: "Truck Mounted Crane - 40T",
+    name: "Furunkang FT-200 Aerial Work Platform",
     image: crane2,
-    capacity: "40 Tons",
-    boom: "45m",
+    workingHeight: "20 m",
+    platformCapacity: "260 kg",
     status: "Available",
-    features: ["Advanced Control", "City Operation", "Outrigger Support", "Load Monitoring"],
-    description: "Heavy-duty truck mounted crane for demanding lifting operations in urban environments."
+    features: [
+      "360° turret rotation",
+      "Dual entry safety basket",
+      "Live-line insulation option",
+      "CAN-bus diagnostics"
+    ],
+    description: "Versatile mid-height platform delivering precise outreach for utility, telecom, and facility maintenance teams."
   },
   {
     id: 3,
-    name: "Compact Mobile Crane - 15T",
+    name: "Furunkang FT-320 High Reach Manlift",
     image: crane3,
-    capacity: "15 Tons",
-    boom: "25m",
+    workingHeight: "32 m",
+    platformCapacity: "320 kg",
     status: "Pre-Order",
-    features: ["Compact Design", "Precision Control", "Easy Transport", "Quick Assembly"],
-    description: "Compact crane ideal for tight spaces and precision lifting requirements."
+    features: [
+      "Telescopic + articulated boom",
+      "Auto stow programming",
+      "Wind speed monitoring",
+      "Compatible with Bharat Benz and Eicher chassis"
+    ],
+    description: "Flagship high-reach solution supplied with advanced stability control for metro, transmission, and industrial shutdown projects."
   }
 ];
 
-const towerCranes = [
+const chassisPackages = [
   {
-    name: "Self-Erecting Tower Crane",
-    capacity: "8 Tons",
-    boom: "50m",
-    status: "In Stock",
-    features: ["Self-Erecting", "Remote Control", "Weather Protection", "High Precision"]
+    name: "Ashok Leyland Integration Kit",
+    capacity: "FT-160 to FT-280",
+    boom: "Factory-mounted",
+    status: "Ready Stock",
+    features: [
+      "Pre-engineered sub-frame",
+      "Electrical harness integration",
+      "Load distribution certification",
+      "On-site commissioning support"
+    ]
   },
   {
-    name: "Luffing Jib Tower Crane",
-    capacity: "12 Tons",
-    boom: "60m",
+    name: "Tata & Bharat Benz Mounting Kit",
+    capacity: "FT-200 to FT-320",
+    boom: "Factory-mounted",
     status: "Available",
-    features: ["Luffing Jib", "High Capacity", "Weather Resistant", "Advanced Safety"]
+    features: [
+      "Hydraulic PTO configuration",
+      "Stability validation reports",
+      "Operator safety interlocks",
+      "Chassis reinforcement guidelines"
+    ]
   }
 ];
 
 const accessories = [
-  { name: "Hook Blocks", description: "Various capacity hook blocks and rigging equipment" },
-  { name: "Wire Ropes", description: "High-strength wire ropes for all crane types" },
-  { name: "Safety Systems", description: "Load monitoring and safety control systems" },
-  { name: "Spare Parts", description: "Genuine spare parts for all major crane brands" }
+  { name: "Insulated Basket Options", description: "Class A and Class C insulation packages with dielectric testing" },
+  { name: "Stabiliser Pads", description: "High-density outrigger pads sized for Furunkang FT series" },
+  { name: "Remote Diagnostics", description: "Telemetry kits for monitoring usage and maintenance schedules" },
+  { name: "Genuine Spare Parts", description: "Hydraulic, electrical, and structural components stocked in India" }
 ];
 
 export function ProductsPage() {
@@ -90,27 +115,27 @@ export function ProductsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-              Crane Products & Sales
+              Furunkang Truck Mounted Lifts for Sale
             </h1>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-8">
-              Premium quality cranes and lifting equipment for sale. New and certified used 
-              cranes with warranty and full support from SS Cranes & Lifters.
+              SS Cranes & Lifters is the pan-India sole distributor of Furunkang aerial work platforms. Choose from the
+              complete FT series with certified installation support and rapid delivery nationwide.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
+              <Button
                 className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold"
                 onClick={() => window.open('tel:+917021844804')}
               >
                 <Phone className="mr-2 h-5 w-5" />
-                Call +91 70218 44804
+                Speak to Sales
               </Button>
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 className="border-white text-black hover:bg-white hover:text-blue-600"
-                onClick={() => openEnquiry('General Product Inquiry')}
+                onClick={() => openEnquiry('Furunkang Product Catalogue')}
               >
                 <Mail className="mr-2 h-5 w-5" />
-                Email Inquiry
+                Request Catalogue
               </Button>
             </div>
           </div>
@@ -120,27 +145,26 @@ export function ProductsPage() {
       {/* Product Categories */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Tabs defaultValue="mobile" className="w-full">
+          <Tabs defaultValue="truck-mounted" className="w-full">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
                 Our Product Range
               </h2>
-              <TabsList className="grid w-full max-w-md mx-auto grid-cols-4">
-                <TabsTrigger value="mobile">Mobile</TabsTrigger>
-                <TabsTrigger value="tower">Tower</TabsTrigger>
-                <TabsTrigger value="overhead">Overhead</TabsTrigger>
-                
+              <TabsList className="grid w-full max-w-md mx-auto grid-cols-3">
+                <TabsTrigger value="truck-mounted">Truck Mounted Lifts</TabsTrigger>
+                <TabsTrigger value="chassis-packages">Chassis Kits</TabsTrigger>
+                <TabsTrigger value="spares">Accessories</TabsTrigger>
               </TabsList>
             </div>
 
-            <TabsContent value="mobile" className="space-y-8">
+            <TabsContent value="truck-mounted" className="space-y-8">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Mobile Cranes</h3>
-                <p className="text-gray-600">Truck-mounted and all-terrain mobile cranes for versatile lifting operations</p>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Furunkang Truck Mounted Lifts</h3>
+                <p className="text-gray-600">Certified aerial work platforms available exclusively through SS Cranes & Lifters.</p>
               </div>
-              
+
               <div className="grid lg:grid-cols-3 gap-8">
-                {mobilecranes.map((crane) => (
+                {truckMountedLifts.map((crane) => (
                   <Card key={crane.id} className="overflow-hidden hover:shadow-xl transition-shadow">
                     <div className="aspect-[4/3] overflow-hidden">
                       <img 
@@ -157,8 +181,8 @@ export function ProductsPage() {
                         </Badge>
                       </div>
                       <div className="flex justify-between text-sm text-gray-600">
-                        <span>Capacity: {crane.capacity}</span>
-                        <span>Boom: {crane.boom}</span>
+                        <span>Working Height: {crane.workingHeight}</span>
+                        <span>Platform Capacity: {crane.platformCapacity}</span>
                       </div>
                     </CardHeader>
                     <CardContent>
@@ -187,14 +211,14 @@ export function ProductsPage() {
               </div>
             </TabsContent>
 
-            <TabsContent value="tower" className="space-y-8">
+            <TabsContent value="chassis-packages" className="space-y-8">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Tower Cranes</h3>
-                <p className="text-gray-600">Self-erecting and luffing jib tower cranes for construction projects</p>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Chassis Mounting Kits</h3>
+                <p className="text-gray-600">Pre-engineered integration kits to mount Furunkang AWPs on leading Indian chassis.</p>
               </div>
-              
+
               <div className="grid md:grid-cols-2 gap-8">
-                {towerCranes.map((crane, index) => (
+                {chassisPackages.map((crane, index) => (
                   <Card key={index} className="hover:shadow-lg transition-shadow">
                     <CardHeader>
                       <div className="flex justify-between items-start">
@@ -202,8 +226,8 @@ export function ProductsPage() {
                         <Badge variant="default">{crane.status}</Badge>
                       </div>
                       <div className="flex justify-between text-sm text-gray-600">
-                        <span>Capacity: {crane.capacity}</span>
-                        <span>Boom: {crane.boom}</span>
+                        <span>Model Range: {crane.capacity}</span>
+                        <span>Installation: {crane.boom}</span>
                       </div>
                     </CardHeader>
                     <CardContent>
@@ -217,11 +241,11 @@ export function ProductsPage() {
                       </div>
                       
                       <div className="flex justify-center pt-4 border-t">
-                        <Button 
+                        <Button
                           className="bg-blue-600 hover:bg-blue-700 w-full"
-                          onClick={() => openEnquiry(crane.name)}
+                          onClick={() => openEnquiry(`${crane.name} Kit`)}
                         >
-                          Get Quote
+                          Reserve Kit
                         </Button>
                       </div>
                     </CardContent>
@@ -230,32 +254,25 @@ export function ProductsPage() {
               </div>
             </TabsContent>
 
-            <TabsContent value="overhead" className="space-y-8">
+            <TabsContent value="spares" className="space-y-8">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Overhead Cranes</h3>
-                <p className="text-gray-600">Industrial overhead and gantry cranes for heavy-duty applications</p>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Accessories & Spares</h3>
+                <p className="text-gray-600">Enhance uptime with genuine Furunkang options supplied from our Indian inventory.</p>
               </div>
-              
+
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {[
-                  { name: "Single Girder Overhead Crane", capacity: "5-20 Tons", span: "10-25m" },
-                  { name: "Double Girder Overhead Crane", capacity: "20-100 Tons", span: "15-35m" },
-                  { name: "Gantry Crane", capacity: "10-50 Tons", span: "12-30m" }
-                ].map((crane, index) => (
+                {accessories.map((item, index) => (
                   <Card key={index} className="hover:shadow-lg transition-shadow">
                     <CardHeader>
-                      <CardTitle className="text-lg">{crane.name}</CardTitle>
-                      <div className="text-sm text-gray-600">
-                        <p>Capacity: {crane.capacity}</p>
-                        <p>Span: {crane.span}</p>
-                      </div>
+                      <CardTitle className="text-lg">{item.name}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <Button 
+                      <p className="text-gray-600 mb-4">{item.description}</p>
+                      <Button
                         className="w-full bg-blue-600 hover:bg-blue-700"
-                        onClick={() => openEnquiry(crane.name)}
+                        onClick={() => openEnquiry(item.name)}
                       >
-                        Request Quote
+                        Check Availability
                       </Button>
                     </CardContent>
                   </Card>
@@ -278,10 +295,10 @@ export function ProductsPage() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: Shield, title: "Warranty", description: "Comprehensive warranty on all new equipment" },
-              { icon: Settings, title: "Installation", description: "Professional installation and commissioning" },
-              { icon: Truck, title: "Delivery", description: "Safe transportation and delivery across Maharashtra" },
-              { icon: Star, title: "Support", description: "24/7 technical support and maintenance services" }
+              { icon: Shield, title: "Factory Warranty", description: "Official Furunkang coverage with extended options" },
+              { icon: Settings, title: "Chassis Engineering", description: "Mounting kits and PTO configuration for Indian fleets" },
+              { icon: Truck, title: "Pan-India Delivery", description: "Doorstep delivery with dispatch updates across India" },
+              { icon: Star, title: "Operator Training", description: "Commissioning walkthrough and safety orientation" }
             ].map((feature, index) => (
               <Card key={index} className="text-center hover:shadow-lg transition-shadow">
                 <CardHeader>
@@ -301,10 +318,10 @@ export function ProductsPage() {
       <section className="py-20 bg-blue-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-            Ready to Purchase a Crane?
+            Ready to Deploy a Furunkang Manlift?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            Get in touch with our sales team for detailed specifications, pricing, and financing options.
+            Speak with our product specialists for specifications, chassis preparation guidance, and delivery timelines.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -320,7 +337,7 @@ export function ProductsPage() {
               onClick={() => window.open('mailto:sales@sscraneslifters.com')}
             >
               <Mail className="mr-2 h-5 w-5" />
-              Email: sales@sscraneslifters.com
+              Email Sales Team
             </Button>
           </div>
         </div>

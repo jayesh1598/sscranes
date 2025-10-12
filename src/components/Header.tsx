@@ -14,7 +14,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
     { name: 'Home', id: 'home' },
     { name: 'About', id: 'about' },
     { name: 'Products', id: 'products' },
-    { name: 'Contact', id: 'contact' }
+      { name: 'Contact', id: 'contact' }
   ];
 
   return (
@@ -46,7 +46,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
         <div className="flex justify-between items-center py-4">
           <div className="flex-shrink-0">
             <h1 className="text-3xl font-bold text-gray-900">SS Cranes & Lifters</h1>
-            <p className="text-sm text-gray-600 mt-1">Sales & Service Solutions</p>
+            <p className="text-sm text-gray-600 mt-1">Pan-India Furunkang Manlift Distributor</p>
           </div>
           
           {/* Desktop Navigation */}
@@ -64,9 +64,14 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
                 {item.name}
               </button>
             ))}
-            <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
-              Get Quote
-            </Button>
+            <Button
+            size="lg"
+            className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold text-lg px-8 py-4"
+            onClick={() => window.open('tel:+917021844804')}
+                      >
+            <Phone className="mr-2 h-5 w-5" />
+           Enquiry Now
+          </Button>
           </nav>
 
           {/* Mobile menu button */}
@@ -101,8 +106,8 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
                 </button>
               ))}
               <div className="px-4 pt-2">
-                <Button size="sm" className="w-full bg-blue-600 hover:bg-blue-700">
-                  Get Quote
+                <Button size="sm" className="w-full bg-blue-600 hover:bg-blue-700" onClick={() => onNavigate('products')}>
+                  View Product Range
                 </Button>
               </div>
             </nav>

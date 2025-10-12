@@ -13,9 +13,9 @@ export function Footer({ onNavigate }: FooterProps) {
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold mb-4">SS Cranes & Lifters</h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Your trusted partner for crane sales and professional lifting services. With over 15 years 
-              of experience, we provide safe, reliable, and efficient solutions for all your lifting needs 
-              across Navi Mumbai and Maharashtra.
+              Authorized pan-India distributor of Furunkang truck mounted aerial work platforms. Delivering
+              advanced manlift solutions tailored for infrastructure, utilities, and industrial maintenance
+              teams across India.
             </p>
             <div className="flex space-x-4">
               <Facebook className="h-6 w-6 text-gray-400 hover:text-white cursor-pointer transition-colors" />
@@ -38,26 +38,10 @@ export function Footer({ onNavigate }: FooterProps) {
               </li>
               <li>
                 <button 
-                  onClick={() => onNavigate('about')} 
-                  className="text-gray-300 hover:text-white transition-colors text-left"
-                >
-                  About Us
-                </button>
-              </li>
-              <li>
-                <button 
                   onClick={() => onNavigate('products')} 
                   className="text-gray-300 hover:text-white transition-colors text-left"
                 >
                   Products & Sales
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => onNavigate('contact')} 
-                  className="text-gray-300 hover:text-white transition-colors text-left"
-                >
-                  Contact Us
                 </button>
               </li>
             </ul>
@@ -89,7 +73,7 @@ export function Footer({ onNavigate }: FooterProps) {
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2024 SS Cranes & Lifters. All rights reserved. | Licensed & Insured Crane Sales & Services
+            © 2024 SS Cranes & Lifters. Authorized Furunkang Manlift distributor across India.
           </p>
         </div>
       </div>

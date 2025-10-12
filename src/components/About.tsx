@@ -2,19 +2,19 @@ import { Card, CardContent } from './ui/card';
 import { CheckCircle, Calendar, Users, Trophy } from 'lucide-react';
 
 const stats = [
-  { icon: Calendar, label: "Years of Experience", value: "15+" },
-  { icon: Users, label: "Customer Satisfied", value: "500+" },
-  { icon: Trophy, label: "Product Delivered", value: "500+" },
-  { icon: CheckCircle, label: "Safety Record", value: "100%" }
+  { icon: Calendar, label: "Years as Distributor", value: "15+" },
+  { icon: Users, label: "Furunkang Models", value: "6" },
+  { icon: Trophy, label: "AWP Deliveries", value: "750+" },
+  { icon: CheckCircle, label: "Certified Installs", value: "100%" }
 ];
 
 const features = [
-  "Licensed and insured operations",
-  "Modern, well-maintained equipment fleet",
-  "Certified and experienced operators",
-  "24/7 emergency service availability",
-  "Competitive pricing and flexible contracts",
-  "Comprehensive safety protocols"
+  "Exclusive pan-India distributor for Furunkang truck mounted lifts",
+  "AWP kits engineered for Indian road and climate conditions",
+  "Rapid chassis integration on Ashok Leyland, Tata, Eicher, Bharat Benz",
+  "Factory-backed warranty with spare parts availability",
+  "High-reach platforms with insulated and non-insulated variants",
+  "Nationwide delivery and commissioning support"
 ];
 
 export function About() {
@@ -24,27 +24,27 @@ export function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              About SS Cranes & Lifters
+              Furunkang Manlift Distribution Excellence
             </h2>
             <div className="prose prose-lg text-gray-600 space-y-4">
               <p>
-                With over 15 years of experience in the crane and lifting industry, SS Cranes & Lifters 
-                has established itself as a trusted partner for construction, industrial, and commercial projects.
+                SS Cranes & Lifters is the exclusive pan-India distributor for Furunkang truck mounted aerial work
+                platforms. We specialise in supplying ready-to-mount kits that deliver European-grade reach,
+                stability, and safety for utilities, infrastructure, and industrial maintenance teams.
               </p>
               <p>
-                Our commitment to safety, reliability, and customer satisfaction has made us the preferred 
-                choice for complex lifting operations across the region. We maintain a modern fleet of 
-                well-serviced equipment operated by certified professionals.
+                Each unit is supplied with factory certifications, full technical documentation, and on-ground
+                commissioning support. Our inventory covers multiple working heights, ensuring every client receives
+                the optimal platform for their application.
               </p>
               <p>
-                From small residential projects to large industrial installations, we provide tailored 
-                solutions that meet the unique requirements of each project while maintaining the highest 
-                safety standards.
+                With logistics hubs across India and a dedicated sales engineering team, we provide rapid deliveries,
+                chassis integration guidance, and long-term parts availability for every Furunkang installation.
               </p>
             </div>
-            
+
             <div className="mt-8">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Why Choose Us?</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Why Procurement Teams Choose Us</h3>
               <div className="grid grid-cols-1 gap-3">
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-center space-x-3">
