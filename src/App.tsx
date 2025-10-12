@@ -15,16 +15,9 @@ export default function App() {
 
   const renderPage = () => {
     switch (currentPage) {
-      case 'home':
-        return <HomePage onNavigate={handleNavigate} />;
-      case 'about':
-        return <AboutPage />;
-      case 'services':
-        return <ServicesPage />;
       case 'products':
         return <ProductsPage />;
-      case 'contact':
-        return <ContactPage />;
+      case 'home':
       default:
         return <HomePage onNavigate={handleNavigate} />;
     }
