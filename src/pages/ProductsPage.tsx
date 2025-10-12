@@ -18,33 +18,48 @@ import crane3 from 'figma:asset/4d33ef90bd2dca26d45c7c921a0acb89609be36f.png';
 const truckMountedLifts = [
   {
     id: 1,
-    name: "Hydraulic Mobile Crane - 25T",
+    name: "Furunkang FT-160 Truck Mounted Lift",
     image: crane1,
-    capacity: "25 Tons",
-    boom: "30m",
+    workingHeight: "16 m",
+    platformCapacity: "230 kg",
     status: "In Stock",
-    features: ["Hydraulic Extension", "All-Terrain", "Quick Setup", "Safety Systems"],
-    description: "Versatile 25-ton mobile crane perfect for construction and industrial applications."
+    features: [
+      "Insulated fibreglass basket",
+      "Proportional joystick controls",
+      "Auto-level outriggers",
+      "Compact footprint for urban jobs"
+    ],
+    description: "Optimised for city utilities and street lighting maintenance with seamless mounting on Ashok Leyland and Tata chassis."
   },
   {
     id: 2,
-    name: "Truck Mounted Crane - 40T",
+    name: "Furunkang FT-200 Aerial Work Platform",
     image: crane2,
-    capacity: "40 Tons",
-    boom: "45m",
+    workingHeight: "20 m",
+    platformCapacity: "260 kg",
     status: "Available",
-    features: ["Advanced Control", "City Operation", "Outrigger Support", "Load Monitoring"],
-    description: "Heavy-duty truck mounted crane for demanding lifting operations in urban environments."
+    features: [
+      "360° turret rotation",
+      "Dual entry safety basket",
+      "Live-line insulation option",
+      "CAN-bus diagnostics"
+    ],
+    description: "Versatile mid-height platform delivering precise outreach for utility, telecom, and facility maintenance teams."
   },
   {
     id: 3,
-    name: "Compact Mobile Crane - 15T",
+    name: "Furunkang FT-320 High Reach Manlift",
     image: crane3,
-    capacity: "15 Tons",
-    boom: "25m",
+    workingHeight: "32 m",
+    platformCapacity: "320 kg",
     status: "Pre-Order",
-    features: ["Compact Design", "Precision Control", "Easy Transport", "Quick Assembly"],
-    description: "Compact crane ideal for tight spaces and precision lifting requirements."
+    features: [
+      "Telescopic + articulated boom",
+      "Auto stow programming",
+      "Wind speed monitoring",
+      "Compatible with Bharat Benz and Eicher chassis"
+    ],
+    description: "Flagship high-reach solution supplied with advanced stability control for metro, transmission, and industrial shutdown projects."
   }
 ];
 
