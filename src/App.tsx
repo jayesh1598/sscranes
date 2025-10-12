@@ -2,7 +2,9 @@ import { useState } from 'react';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { HomePage } from './pages/HomePage';
+import { AboutPage } from './pages/AboutPage';
 import { ProductsPage } from './pages/ProductsPage';
+import { ContactPage } from './pages/ContactPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -17,6 +19,10 @@ export default function App() {
     switch (currentPage) {
       case 'products':
         return <ProductsPage />;
+      case 'about':
+        return <AboutPage />;
+      case 'contact':
+        return <ContactPage />;
       case 'home':
       default:
         return <HomePage onNavigate={handleNavigate} />;
