@@ -2,10 +2,7 @@ import { useState } from 'react';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { HomePage } from './pages/HomePage';
-import { AboutPage } from './pages/AboutPage';
-import { ServicesPage } from './pages/ServicesPage';
 import { ProductsPage } from './pages/ProductsPage';
-import { ContactPage } from './pages/ContactPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
