@@ -91,10 +91,10 @@ const chassisPackages = [
 ];
 
 const accessories = [
-  { name: "Hook Blocks", description: "Various capacity hook blocks and rigging equipment" },
-  { name: "Wire Ropes", description: "High-strength wire ropes for all crane types" },
-  { name: "Safety Systems", description: "Load monitoring and safety control systems" },
-  { name: "Spare Parts", description: "Genuine spare parts for all major crane brands" }
+  { name: "Insulated Basket Options", description: "Class A and Class C insulation packages with dielectric testing" },
+  { name: "Stabiliser Pads", description: "High-density outrigger pads sized for Furunkang FT series" },
+  { name: "Remote Diagnostics", description: "Telemetry kits for monitoring usage and maintenance schedules" },
+  { name: "Genuine Spare Parts", description: "Hydraulic, electrical, and structural components stocked in India" }
 ];
 
 export function ProductsPage() {
