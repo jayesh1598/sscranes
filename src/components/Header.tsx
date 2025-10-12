@@ -70,7 +70,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
             onClick={() => window.open('tel:+917021844804')}
                       >
             <Phone className="mr-2 h-5 w-5" />
-            {slide.cta}
+           Enquiry Now
           </Button>
           </nav>
 
