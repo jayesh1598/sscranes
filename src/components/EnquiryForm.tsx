@@ -131,11 +131,11 @@ export function EnquiryForm({ isOpen, onClose, productName }: EnquiryFormProps) 
                   <SelectValue placeholder="Select enquiry type" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="purchase">Purchase Enquiry</SelectItem>
-                  <SelectItem value="rental">Rental Enquiry</SelectItem>
-                  <SelectItem value="maintenance">Maintenance Service</SelectItem>
-                  <SelectItem value="parts">Parts & Accessories</SelectItem>
-                  <SelectItem value="training">Operator Training</SelectItem>
+                  <SelectItem value="purchase">Product Purchase</SelectItem>
+                  <SelectItem value="chassis">Chassis Integration Guidance</SelectItem>
+                  <SelectItem value="demo">Live Demonstration</SelectItem>
+                  <SelectItem value="spares">Spare Parts Availability</SelectItem>
+                  <SelectItem value="training">Operator Orientation</SelectItem>
                   <SelectItem value="other">Other</SelectItem>
                 </SelectContent>
               </Select>
