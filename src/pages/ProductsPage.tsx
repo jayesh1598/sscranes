@@ -15,7 +15,7 @@ import crane1 from 'figma:asset/0404d9e47455bdc0b536dab9952a209a2600c105.png';
 import crane2 from 'figma:asset/88e5719b4227d99b970bd5d363499deadf29ff45.png';
 import crane3 from 'figma:asset/4d33ef90bd2dca26d45c7c921a0acb89609be36f.png';
 
-const mobilecranes = [
+const truckMountedLifts = [
   {
     id: 1,
     name: "Hydraulic Mobile Crane - 25T",
@@ -140,7 +140,7 @@ export function ProductsPage() {
               </div>
               
               <div className="grid lg:grid-cols-3 gap-8">
-                {mobilecranes.map((crane) => (
+                {truckMountedLifts.map((crane) => (
                   <Card key={crane.id} className="overflow-hidden hover:shadow-xl transition-shadow">
                     <div className="aspect-[4/3] overflow-hidden">
                       <img 
