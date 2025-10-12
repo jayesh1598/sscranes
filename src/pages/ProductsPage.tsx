@@ -318,10 +318,10 @@ export function ProductsPage() {
       <section className="py-20 bg-blue-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-            Ready to Purchase a Crane?
+            Ready to Deploy a Furunkang Manlift?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            Get in touch with our sales team for detailed specifications, pricing, and financing options.
+            Speak with our product specialists for specifications, chassis preparation guidance, and delivery timelines.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -337,7 +337,7 @@ export function ProductsPage() {
               onClick={() => window.open('mailto:sales@sscraneslifters.com')}
             >
               <Mail className="mr-2 h-5 w-5" />
-              Email: sales@sscraneslifters.com
+              Email Sales Team
             </Button>
           </div>
         </div>
