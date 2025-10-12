@@ -15,27 +15,65 @@ export function HomePage({ onNavigate }: HomePageProps) {
       <About />
     <ScrollingBanner />
       <Equipment />
-      
-      {/* Quick Contact Section */}
-      <section className="bg-blue-600 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
-          <p className="text-xl text-blue-100 mb-8">
-            Contact us today for crane sales, rentals, or professional lifting services
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button 
-              onClick={() => onNavigate('contact')}
-              className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-8 py-3 rounded-lg font-semibold transition-colors"
-            >
-              Get Free Quote
-            </button>
-            <button 
-              onClick={() => onNavigate('products')}
-              className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 rounded-lg font-semibold transition-colors"
-            >
-              Browse Products
-            </button>
+
+      <section className="bg-blue-50 py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Pan-India Furunkang Manlift Distribution</h2>
+              <p className="text-lg text-gray-700 mb-6">
+                SS Cranes & Lifters are one of the best distributors of truck mounted lift (AWP) solutions. We are the
+                pan India sole distributor of Furunkang company manlifts, delivering certified aerial work platforms to
+                every state with rapid installation support.
+              </p>
+              <div className="bg-white rounded-2xl shadow-md p-6 space-y-4">
+                <h3 className="text-xl font-semibold text-gray-900">Chassis Integration Coverage</h3>
+                <p className="text-gray-700">
+                  We mount on all types of different company chassis available in India including:
+                </p>
+                <ul className="grid sm:grid-cols-2 gap-3 text-gray-800 text-sm">
+                  <li className="flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-blue-600"></span>
+                    ASHOK LEYLAND
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-blue-600"></span>
+                    TATA
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-blue-600"></span>
+                    EICHER
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-blue-600"></span>
+                    BHARAT BENZ
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="bg-blue-600 text-white rounded-2xl p-8 shadow-xl">
+              <h3 className="text-2xl font-semibold mb-4">Sales Support Snapshot</h3>
+              <ul className="space-y-4 text-blue-50">
+                <li className="flex items-start gap-3">
+                  <span className="mt-2 h-2 w-2 rounded-full bg-yellow-400"></span>
+                  <span>Working height options from 16m to 32m with insulated and non-insulated platforms.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-2 h-2 w-2 rounded-full bg-yellow-400"></span>
+                  <span>Factory stock availability for immediate dispatch and on-site commissioning.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-2 h-2 w-2 rounded-full bg-yellow-400"></span>
+                  <span>Dedicated sales engineers to support specification finalisation and chassis preparation.</span>
+                </li>
+              </ul>
+              <button
+                className="mt-8 w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold py-3 rounded-lg transition-colors"
+                onClick={() => onNavigate('products')}
+              >
+                Explore Furunkang Range
+              </button>
+            </div>
           </div>
         </div>
       </section>
