@@ -64,9 +64,14 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
                 {item.name}
               </button>
             ))}
-            <Button size="sm" className="bg-blue-600 hover:bg-blue-700" onClick={() => onNavigate('products')}>
-              Enquiry Now
-            </Button>
+            <Button
+            size="lg"
+            className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold text-lg px-8 py-4"
+            onClick={() => window.open('tel:+917021844804')}
+                      >
+            <Phone className="mr-2 h-5 w-5" />
+            {slide.cta}
+          </Button>
           </nav>
 
           {/* Mobile menu button */}
