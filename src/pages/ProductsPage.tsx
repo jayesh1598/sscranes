@@ -115,27 +115,27 @@ export function ProductsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-              Crane Products & Sales
+              Furunkang Truck Mounted Lifts for Sale
             </h1>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-8">
-              Premium quality cranes and lifting equipment for sale. New and certified used 
-              cranes with warranty and full support from SS Cranes & Lifters.
+              SS Cranes & Lifters is the pan-India sole distributor of Furunkang aerial work platforms. Choose from the
+              complete FT series with certified installation support and rapid delivery nationwide.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
+              <Button
                 className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold"
                 onClick={() => window.open('tel:+917021844804')}
               >
                 <Phone className="mr-2 h-5 w-5" />
-                Call +91 70218 44804
+                Speak to Sales
               </Button>
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 className="border-white text-black hover:bg-white hover:text-blue-600"
-                onClick={() => openEnquiry('General Product Inquiry')}
+                onClick={() => openEnquiry('Furunkang Product Catalogue')}
               >
                 <Mail className="mr-2 h-5 w-5" />
-                Email Inquiry
+                Request Catalogue
               </Button>
             </div>
           </div>
