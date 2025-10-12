@@ -181,8 +181,8 @@ export function ProductsPage() {
                         </Badge>
                       </div>
                       <div className="flex justify-between text-sm text-gray-600">
-                        <span>Capacity: {crane.capacity}</span>
-                        <span>Boom: {crane.boom}</span>
+                        <span>Working Height: {crane.workingHeight}</span>
+                        <span>Platform Capacity: {crane.platformCapacity}</span>
                       </div>
                     </CardHeader>
                     <CardContent>
