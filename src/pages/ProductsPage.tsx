@@ -145,25 +145,24 @@ export function ProductsPage() {
       {/* Product Categories */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Tabs defaultValue="mobile" className="w-full">
+          <Tabs defaultValue="truck-mounted" className="w-full">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
                 Our Product Range
               </h2>
-              <TabsList className="grid w-full max-w-md mx-auto grid-cols-4">
-                <TabsTrigger value="mobile">Mobile</TabsTrigger>
-                <TabsTrigger value="tower">Tower</TabsTrigger>
-                <TabsTrigger value="overhead">Overhead</TabsTrigger>
-                
+              <TabsList className="grid w-full max-w-md mx-auto grid-cols-3">
+                <TabsTrigger value="truck-mounted">Truck Mounted Lifts</TabsTrigger>
+                <TabsTrigger value="chassis-packages">Chassis Kits</TabsTrigger>
+                <TabsTrigger value="spares">Accessories</TabsTrigger>
               </TabsList>
             </div>
 
-            <TabsContent value="mobile" className="space-y-8">
+            <TabsContent value="truck-mounted" className="space-y-8">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Mobile Cranes</h3>
-                <p className="text-gray-600">Truck-mounted and all-terrain mobile cranes for versatile lifting operations</p>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Furunkang Truck Mounted Lifts</h3>
+                <p className="text-gray-600">Certified aerial work platforms available exclusively through SS Cranes & Lifters.</p>
               </div>
-              
+
               <div className="grid lg:grid-cols-3 gap-8">
                 {truckMountedLifts.map((crane) => (
                   <Card key={crane.id} className="overflow-hidden hover:shadow-xl transition-shadow">
@@ -212,14 +211,14 @@ export function ProductsPage() {
               </div>
             </TabsContent>
 
-            <TabsContent value="tower" className="space-y-8">
+            <TabsContent value="chassis-packages" className="space-y-8">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Tower Cranes</h3>
-                <p className="text-gray-600">Self-erecting and luffing jib tower cranes for construction projects</p>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Chassis Mounting Kits</h3>
+                <p className="text-gray-600">Pre-engineered integration kits to mount Furunkang AWPs on leading Indian chassis.</p>
               </div>
-              
+
               <div className="grid md:grid-cols-2 gap-8">
-                {towerCranes.map((crane, index) => (
+                {chassisPackages.map((crane, index) => (
                   <Card key={index} className="hover:shadow-lg transition-shadow">
                     <CardHeader>
                       <div className="flex justify-between items-start">
@@ -227,8 +226,8 @@ export function ProductsPage() {
                         <Badge variant="default">{crane.status}</Badge>
                       </div>
                       <div className="flex justify-between text-sm text-gray-600">
-                        <span>Capacity: {crane.capacity}</span>
-                        <span>Boom: {crane.boom}</span>
+                        <span>Model Range: {crane.capacity}</span>
+                        <span>Installation: {crane.boom}</span>
                       </div>
                     </CardHeader>
                     <CardContent>
@@ -242,11 +241,11 @@ export function ProductsPage() {
                       </div>
                       
                       <div className="flex justify-center pt-4 border-t">
-                        <Button 
+                        <Button
                           className="bg-blue-600 hover:bg-blue-700 w-full"
-                          onClick={() => openEnquiry(crane.name)}
+                          onClick={() => openEnquiry(`${crane.name} Kit`)}
                         >
-                          Get Quote
+                          Reserve Kit
                         </Button>
                       </div>
                     </CardContent>
@@ -255,32 +254,25 @@ export function ProductsPage() {
               </div>
             </TabsContent>
 
-            <TabsContent value="overhead" className="space-y-8">
+            <TabsContent value="spares" className="space-y-8">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Overhead Cranes</h3>
-                <p className="text-gray-600">Industrial overhead and gantry cranes for heavy-duty applications</p>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Accessories & Spares</h3>
+                <p className="text-gray-600">Enhance uptime with genuine Furunkang options supplied from our Indian inventory.</p>
               </div>
-              
+
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {[
-                  { name: "Single Girder Overhead Crane", capacity: "5-20 Tons", span: "10-25m" },
-                  { name: "Double Girder Overhead Crane", capacity: "20-100 Tons", span: "15-35m" },
-                  { name: "Gantry Crane", capacity: "10-50 Tons", span: "12-30m" }
-                ].map((crane, index) => (
+                {accessories.map((item, index) => (
                   <Card key={index} className="hover:shadow-lg transition-shadow">
                     <CardHeader>
-                      <CardTitle className="text-lg">{crane.name}</CardTitle>
-                      <div className="text-sm text-gray-600">
-                        <p>Capacity: {crane.capacity}</p>
-                        <p>Span: {crane.span}</p>
-                      </div>
+                      <CardTitle className="text-lg">{item.name}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <Button 
+                      <p className="text-gray-600 mb-4">{item.description}</p>
+                      <Button
                         className="w-full bg-blue-600 hover:bg-blue-700"
-                        onClick={() => openEnquiry(crane.name)}
+                        onClick={() => openEnquiry(item.name)}
                       >
-                        Request Quote
+                        Check Availability
                       </Button>
                     </CardContent>
                   </Card>
