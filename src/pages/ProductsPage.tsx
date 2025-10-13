@@ -5,9 +5,9 @@ import { Button } from '../components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import { EnquiryForm } from '../components/EnquiryForm';
-import { 
-  Truck, Building, Settings, Shield, Star, 
-  Phone, Mail, CheckCircle, AlertCircle 
+import {
+  Truck, Settings, Shield, Star,
+  Phone, Mail, CheckCircle
 } from 'lucide-react';
 
 const truckMountedLifts = [
