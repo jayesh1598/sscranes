@@ -17,7 +17,6 @@ const truckMountedLifts = [
     image: "https://cdn.builder.io/api/v1/image/assets%2F4efaf843ddf142428e6c4ab5d416f549%2F8fd9c44942eb4e7d986b030e3e035bfc?format=webp&width=800",
     workingHeight: "35 m",
     platformCapacity: "320 kg",
-    status: "In Stock",
     features: [
       "High-strength telescopic boom with insulated basket",
       "Auto-levelling outriggers for uneven terrain",
@@ -32,7 +31,6 @@ const truckMountedLifts = [
     image: "https://cdn.builder.io/api/v1/image/assets%2F4efaf843ddf142428e6c4ab5d416f549%2Fc310d28ca3aa4fd9a730b68c574fc273?format=webp&width=800",
     workingHeight: "30 m",
     platformCapacity: "300 kg",
-    status: "Available",
     features: [
       "Compact wheelbase suited for narrow urban job sites",
       "Dual control stations with emergency override",
@@ -47,7 +45,6 @@ const truckMountedLifts = [
     image: "https://cdn.builder.io/api/v1/image/assets%2F4efaf843ddf142428e6c4ab5d416f549%2F0f8625bfbfd7431bb7eda6f2896e0a80?format=webp&width=800",
     workingHeight: "25 m",
     platformCapacity: "250 kg",
-    status: "Ready to Dispatch",
     features: [
       "Lightweight mounting for Ashok Leyland and Tata chassis",
       "Stabiliser spread designed for congested roads",
@@ -62,7 +59,6 @@ const truckMountedLifts = [
     image: "https://cdn.builder.io/api/v1/image/assets%2F4efaf843ddf142428e6c4ab5d416f549%2F7ed5432d53574f8aaff0a33401f7e45d?format=webp&width=800",
     workingHeight: "45 m",
     platformCapacity: "350 kg",
-    status: "Pre-Order",
     features: [
       "Articulated jib for obstacle clearance at height",
       "Full-time load monitoring with safe load indicators",
@@ -78,7 +74,7 @@ const chassisPackages = [
     name: "Ashok Leyland Integration Kit",
     capacity: "FT-160 to FT-280",
     boom: "Factory-mounted",
-    status: "Ready Stock",
+   // status: "Ready Stock",
     features: [
       "Pre-engineered sub-frame",
       "Electrical harness integration",
@@ -90,7 +86,7 @@ const chassisPackages = [
     name: "Tata & Bharat Benz Mounting Kit",
     capacity: "FT-200 to FT-320",
     boom: "Factory-mounted",
-    status: "Available",
+    //status: "Available",
     features: [
       "Hydraulic PTO configuration",
       "Stability validation reports",
