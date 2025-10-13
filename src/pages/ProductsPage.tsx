@@ -10,56 +10,66 @@ import {
   Phone, Mail, CheckCircle, AlertCircle 
 } from 'lucide-react';
 
-// Import crane images
-import crane1 from 'figma:asset/0404d9e47455bdc0b536dab9952a209a2600c105.png';
-import crane2 from 'figma:asset/88e5719b4227d99b970bd5d363499deadf29ff45.png';
-import crane3 from 'figma:asset/4d33ef90bd2dca26d45c7c921a0acb89609be36f.png';
-
 const truckMountedLifts = [
   {
     id: 1,
-    name: "Furunkang FT-160 Truck Mounted Lift",
-    image: crane1,
-    workingHeight: "16 m",
-    platformCapacity: "230 kg",
+    name: "GK35 SS Furunkang",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F4efaf843ddf142428e6c4ab5d416f549%2F8fd9c44942eb4e7d986b030e3e035bfc?format=webp&width=800",
+    workingHeight: "35 m",
+    platformCapacity: "320 kg",
     status: "In Stock",
     features: [
-      "Insulated fibreglass basket",
-      "Proportional joystick controls",
-      "Auto-level outriggers",
-      "Compact footprint for urban jobs"
+      "High-strength telescopic boom with insulated basket",
+      "Auto-levelling outriggers for uneven terrain",
+      "Proportional joystick with creep speed control",
+      "Live-line maintenance ready with dielectric liners"
     ],
-    description: "Optimised for city utilities and street lighting maintenance with seamless mounting on Ashok Leyland and Tata chassis."
+    description: "Premier GK series platform engineered for metropolitan utilities demanding rapid deployment and precise boom articulation."
   },
   {
     id: 2,
-    name: "Furunkang FT-200 Aerial Work Platform",
-    image: crane2,
-    workingHeight: "20 m",
-    platformCapacity: "260 kg",
+    name: "GK30 SS Furunkang",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F4efaf843ddf142428e6c4ab5d416f549%2Fc310d28ca3aa4fd9a730b68c574fc273?format=webp&width=800",
+    workingHeight: "30 m",
+    platformCapacity: "300 kg",
     status: "Available",
     features: [
-      "360° turret rotation",
-      "Dual entry safety basket",
-      "Live-line insulation option",
-      "CAN-bus diagnostics"
+      "Compact wheelbase suited for narrow urban job sites",
+      "Dual control stations with emergency override",
+      "Hydraulic rotation delivering 360° turret sweep",
+      "Integrated lighting for night maintenance operations"
     ],
-    description: "Versatile mid-height platform delivering precise outreach for utility, telecom, and facility maintenance teams."
+    description: "Balanced reach and payload make the GK30 ideal for facility maintenance, smart city projects, and telecom rollouts."
   },
   {
     id: 3,
-    name: "Furunkang FT-320 High Reach Manlift",
-    image: crane3,
-    workingHeight: "32 m",
-    platformCapacity: "320 kg",
+    name: "GK25 SS Furunkang",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F4efaf843ddf142428e6c4ab5d416f549%2F0f8625bfbfd7431bb7eda6f2896e0a80?format=webp&width=800",
+    workingHeight: "25 m",
+    platformCapacity: "250 kg",
+    status: "Ready to Dispatch",
+    features: [
+      "Lightweight mounting for Ashok Leyland and Tata chassis",
+      "Stabiliser spread designed for congested roads",
+      "Anti-sway basket suspension for steady operations",
+      "Smart diagnostics panel with service reminders"
+    ],
+    description: "Entry GK platform offering dependable working height for distribution companies and municipal contractors across India."
+  },
+  {
+    id: 4,
+    name: "GK45 SS Furunkang",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F4efaf843ddf142428e6c4ab5d416f549%2F7ed5432d53574f8aaff0a33401f7e45d?format=webp&width=800",
+    workingHeight: "45 m",
+    platformCapacity: "350 kg",
     status: "Pre-Order",
     features: [
-      "Telescopic + articulated boom",
-      "Auto stow programming",
-      "Wind speed monitoring",
-      "Compatible with Bharat Benz and Eicher chassis"
+      "Articulated jib for obstacle clearance at height",
+      "Full-time load monitoring with safe load indicators",
+      "Auto-stow sequencing with cab notification",
+      "Fleet telematics ready for remote tracking"
     ],
-    description: "Flagship high-reach solution supplied with advanced stability control for metro, transmission, and industrial shutdown projects."
+    description: "Flagship GK lift delivering high-reach access for transmission networks, metro infrastructure, and heavy industrial shutdowns."
   }
 ];
 
