@@ -3,9 +3,9 @@ import { CheckCircle, Calendar, Users, Trophy, Target, Heart, Lightbulb } from '
 
 const stats = [
   { icon: Calendar, label: "Years of Experience", value: "15+" },
-  { icon: Users, label: "Satisfied Customers", value: "500+" },
-  { icon: Trophy, label: "Projects Completed", value: "1000+" },
-  { icon: CheckCircle, label: "Safety Record", value: "100%" }
+  { icon: Users, label: "Furunkang Models", value: "6" },
+  { icon: Trophy, label: "AWP Deliveries", value: "750+" },
+  { icon: CheckCircle, label: "Certified Installs", value: "100%" }
 ];
 
 const values = [
@@ -56,7 +56,7 @@ export function AboutPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
               <div className="prose prose-lg text-gray-600 space-y-4">
                 <p>
-                  Founded in 2009 in the heart of Navi Mumbai's industrial area, SS Cranes & Lifters 
+                  Founded in the heart of Navi Mumbai's industrial area, SS Cranes & Lifters 
                   began as a small crane rental service with a vision to provide reliable lifting solutions 
                   to the growing construction and industrial sectors.
                 </p>
