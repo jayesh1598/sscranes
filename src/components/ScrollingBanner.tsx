@@ -85,7 +85,7 @@ export function ScrollingBanner() {
           className="bg-blue-600 hover:bg-blue-700 text-black px-8 py-3 rounded-lg transition-colors duration-300 transform hover:scale-105"
           onClick={() => window.open('mailto:sales@sscraneslifters.com')}
         >
-          Request Product Dossier
+          Request Product Brochure
         </button>
       </div>
     </section>
