@@ -47,7 +47,7 @@ export function AboutPage() {
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               With over 15 years of experience, we are Navi Mumbai's trusted partner for 
-              crane sales, rentals, and professional lifting services.
+              crane sales and professional lifting services.
             </p>
           </div>
 
@@ -57,7 +57,7 @@ export function AboutPage() {
               <div className="prose prose-lg text-gray-600 space-y-4">
                 <p>
                   Founded in the heart of Navi Mumbai's industrial area, SS Cranes & Lifters 
-                  began as a small crane rental service with a vision to provide reliable lifting solutions 
+                  began as a small crane with a vision to provide reliable lifting solutions 
                   to the growing construction and industrial sectors.
                 </p>
                 <p>
@@ -168,7 +168,7 @@ export function AboutPage() {
               "24/7 emergency service availability",
               "Competitive pricing and flexible terms",
               "Comprehensive safety protocols",
-              "Quality crane sales and rentals",
+              "Quality crane sales",
               "Professional maintenance services",
               "Local expertise in Navi Mumbai area"
             ].map((feature, index) => (
