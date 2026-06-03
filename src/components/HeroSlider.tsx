@@ -108,7 +108,7 @@ export function HeroSlider() {
                         <span className="text-sm font-semibold">{slide.highlight}</span>
                       </div>
                       <div className="text-gray-300">
-                        📞 +91 70218 44804
+                        📞 +91 9322339009
                       </div>
                     </div>
                     
@@ -116,7 +116,7 @@ export function HeroSlider() {
                       <Button
                         size="lg"
                         className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold text-lg px-8 py-4"
-                        onClick={() => window.open('tel:+917021844804')}
+                        onClick={() => window.open('tel:+919322339009')}
                       >
                         <Phone className="mr-2 h-5 w-5" />
                         {slide.cta}
