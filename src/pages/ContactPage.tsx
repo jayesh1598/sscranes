@@ -8,7 +8,7 @@ const contactMethods = [
   {
     icon: Phone,
     title: "Phone Support",
-    details: ["+91 70218 44804"],
+    details: ["+91 9322339009"],
     description: "Call us for immediate assistance and emergency services",
     action: "Call Now",
     primary: true
@@ -23,7 +23,7 @@ const contactMethods = [
   {
     icon: MessageCircle,
     title: "WhatsApp",
-    details: ["+91 70218 44804"],
+    details: ["+91 9322339009"],
     description: "Quick responses via WhatsApp for urgent inquiries",
     action: "WhatsApp Us"
   }
@@ -59,21 +59,21 @@ const departments = [
     icon: Users,
     title: "Sales Department",
     email: "sales@sscraneslifters.com",
-    phone: "+91 70218 44804",
+    phone: "+91 9322339009",
     description: "New crane sales, quotations, and product information"
   },
   {
     icon: Headphones,
     title: "Service Department",
     email: "service@sscraneslifters.com",
-    phone: "+91 70218 44804",
+    phone: "+91 9322339009",
     description: "Maintenance, repairs, and technical support"
   },
   {
     icon: Phone,
     title: "Emergency Support",
     email: "emergency@sscraneslifters.com",
-    phone: "+91 70218 44804",
+    phone: "+91 9322339009 ",
     description: "24/7 emergency crane services and breakdown support"
   }
 ];
@@ -95,7 +95,7 @@ export function ContactPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold text-lg px-8 py-3">
                 <Phone className="mr-2 h-5 w-5" />
-                +91 70218 44804
+                +91 9322339009
               </Button>
               <Button variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 text-lg px-8 py-3">
                 <Mail className="mr-2 h-5 w-5" />
