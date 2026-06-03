@@ -26,7 +26,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-1">
                 <Phone className="h-3 w-3" />
-                <span>+91 70218 44804</span>
+                <span>+91 9322339009 </span>
               </div>
               <div className="flex items-center space-x-1">
                 <Mail className="h-3 w-3" />
@@ -67,7 +67,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
             <Button
             size="lg"
             className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold text-lg px-8 py-4"
-            onClick={() => window.open('tel:+917021844804')}
+            onClick={() => window.open('tel:+919322339009')}
                       >
             <Phone className="mr-2 h-5 w-5" />
            Enquiry Now
