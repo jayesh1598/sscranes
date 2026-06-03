@@ -52,10 +52,10 @@ export function HeroBanner({ onNavigate }: HeroBannerProps = {}) {
               <Button 
                 size="lg" 
                 className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold"
-                onClick={() => window.open('tel:+917021844804')}
+                onClick={() => window.open('tel:+919322339009')}
               >
                 <Phone className="mr-2 h-5 w-5" />
-                Call +91 70218 44804
+                Call +91 9322339009
               </Button>
               <Button 
                 variant="outline" 
@@ -82,7 +82,7 @@ export function HeroBanner({ onNavigate }: HeroBannerProps = {}) {
                 </div>
                 <div className="pt-4 border-t border-white/20">
                   <p className="font-medium text-white mb-2">Contact Information</p>
-                  <p>📞 +91 70218 44804</p>
+                  <p>📞 +91 9322339009 </p>
                   <p>✉️ info@sscraneslifters.com</p>
                 </div>
                 <Button 
