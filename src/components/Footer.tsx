@@ -53,7 +53,7 @@ export function Footer({ onNavigate }: FooterProps) {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300">+91 70218 44804</span>
+                <span className="text-gray-300">+91 9322339009 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-blue-400" />
@@ -73,7 +73,7 @@ export function Footer({ onNavigate }: FooterProps) {
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2024 SS Cranes & Lifters. Authorized Furunkang Manlift distributor across India.
+            © 2026 SS Cranes & Lifters. Authorized Furunkang Manlift distributor across India.
           </p>
         </div>
       </div>
