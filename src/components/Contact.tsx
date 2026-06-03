@@ -8,7 +8,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["+91 70218 44804", "Emergency: 24/7"],
+    details: ["+91 9322339009", "Emergency: 24/7"],
     description: "Call us for immediate assistance"
   },
   {
